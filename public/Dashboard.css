@@ -1,0 +1,112 @@
+body {
+    display: flex;
+    flex-direction: column; /* Ensure elements are stacked vertically */
+    justify-content: flex-start; /* Align items at the top */
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('tumbuh.jpg'); /* Dark gradient overlay + background image */
+    background-size: cover; /* Ensure the image covers the entire viewport */
+    background-position: center center; /* Position the image in the center */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+.header {
+    text-align: center;
+    padding: 30px 0; /* Increase padding for more space above and below */
+    margin-top: 80px; /* Moves the header further down */
+    color: black; /* Black text */
+    font-family: Arial, sans-serif;
+    width: 100%;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    position: relative; /* Required for absolute positioning of buttons */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 100px; /* Increased font size for larger text */
+    color: rgb(255, 255, 255); /* Text color changed to black */
+}
+
+.button-container {
+    position: absolute;
+    top: -20px; /* Adjusted the position upwards */
+    right: 20px; /* Aligns the buttons to the top-right corner */
+    display: flex;
+    gap: 10px; /* Space between the buttons */
+}
+
+.btn {
+    background-color: rgba(255, 255, 255, 0.4); /* More transparent white background */
+    color: black; /* Black text */
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s; /* Add color transition */
+    font-family: Arial, sans-serif; /* Arial font */
+}
+
+.btn:hover {
+    background-color: rgba(255, 255, 255, 0.5); /* Slightly less transparent on hover */
+}
+
+.btn:active {
+    background-color: rgba(0, 0, 0, 0.6); /* More opaque on click */
+    color: rgb(255, 255, 255); /* Keep text color black when clicked */
+}
+
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    flex-grow: 1; /* Makes this section take the remaining space */
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.4); /* More transparent white background */
+    color: black; /* Black text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Matching box shadow */
+    border-radius: 8px;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: relative; /* Allows using top positioning */
+    top: -100px; /* Move the card up by 50px */
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+    color: rgb(0, 0, 0); /* Black color for text */
+}
+
+.card p {
+    margin: 10px 0;
+    font-size: 48px;
+    font-family: Arial, sans-serif;
+    color: rgb(255, 255, 255); /* Black text color for the value */
+}
+
+.card span {
+    display: block;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    color: #000000; /* Light gray for the sub-text */
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4); /* More transparent white background */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 0px 0;
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.1);
+    color: black; /* Black text color */
+}

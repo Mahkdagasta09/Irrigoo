@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoring Dashboard</title>
+    <link rel="stylesheet" href="Dashboard.css">
+    <script type="module" src="Dashboard.js" defer></script>
+
+</head>
+<body>
+    <header class="header">
+        <h1>IRRIGO</h1>
+        <!-- Button Container for About Us and Logout -->
+        <div class="button-container">
+            <a href="/aboutUs.html" class="btn-container">
+                <button class="btn" id="profile">Profile</button>
+            </a>
+            <a href="/loginPage2.html" class="btn-container">
+                <button class="btn" id="logoutBtn">Logout</button>
+            </a>
+        </div>
+    </header>
+
+    <div class="dashboard" style="display: flex; flex-direction: row; justify-content: center; align-items: center; gap: 20px;">
+        <div class="card">
+            <h2>Humidity</h2>
+            <p id="humidity">--%</p>
+            <span>Current Humidity Level</span>
+        </div>
+
+        <div class="card">
+            <h2>Temperature</h2>
+            <p id="temperature">--°C</p>
+            <span>Current Temperature</span>
+        </div>
+
+        <div class="card">
+            <h2>Moisture</h2>
+            <p id="moisture">--%</p>
+            <span>Current Soil Moisture</span>
+        </div>
+    </div>
+
+    <footer class="text-center mt-4">
+        <p>Developed by Group 3</p>
+    </footer>
+
+</body>
+</html>

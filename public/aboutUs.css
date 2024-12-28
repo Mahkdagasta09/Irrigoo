@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('tumbuh.jpg'); /* Provide a valid image path */
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-position: center; /* Center the background image */
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.row{
+    display: flex;
+    height: 88%;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.col{
+    flex-basis: 50%;
+}
+
+h1{
+    color: #fff;
+    font-size: 100px;
+}
+p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.2; 
+    margin-bottom: 15px; 
+}
+button {
+    width: 180px;
+    color: #000;
+    font-size: 20px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    transition: background 0.3s, color 0.3s; /* Smooth transition for background and text color */
+    cursor: pointer; /* Changes cursor to "click" hand when hovering */
+}
+
+button:active {
+    background: #000; /* Black background when the button is clicked */
+    color: #fff; /* White text when the button is clicked */
+}
+
+
+.card {
+    width: 220px;
+    height: 250px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 5px 10px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+    margin-left: 60px;
+    position: relative; /* Needed to position the icons inside the card */
+}
+
+.card:hover {
+    transform: translate(-10px);
+}
+
+/* Styling for the Instagram and WhatsApp icons */
+.card .icons {
+    position: absolute;
+    bottom: 10px; /* Adjust position from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Fine-tune centering */
+    display: flex;
+    gap: 10px; /* Space between icons */
+    opacity: 0; /* Hide icons initially */
+    transition: opacity 0.3s; /* Fade in/out smoothly */
+}
+
+/* Show icons when card is hovered */
+.card:hover .icons {
+    opacity: 1;
+}
+
+.card .icons i {
+    font-size: 24px;
+    color: #ff0000; /* Change icon color to black */
+    transition: color 0.3s;
+}
+
+.card .icons i:hover {
+    color: #ff9000; /* Change icon color on hover */
+}
+
+.card1 {
+    background-image: url(gasta.jpg);
+}
+
+.card2 {
+    background-image: url(reza.jpg);
+}
+
+.card3 {
+    background-image: url(Adit.jpg);
+}
+
+.card4 {
+    background-image: url(iqbal.jpg);
+}
+
+.card h5 {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for the header */
+    color: #fff; /* White text color */
+    padding: 10px 10px 10px 20px; /* Add padding around the text with more space on the left */
+    text-align: center; /* Align text to the left */
+    border-radius: 5px; /* Optional: rounding the corners */
+    margin: 0; /* Remove default margin */
+    width: 100%; /* Ensure the background stretches across the entire width of the card */
+}
+
+
+.card h5 {
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background for the header */
+    color: #fff; /* White text color */
+    padding: 10px 10px 10px 20px; /* Add padding around the text with more space on the left */
+    text-align: center; /* Align text to the left */
+    border-radius: 5px; /* Optional: rounding the corners */
+    margin: 0; /* Remove default margin */
+    width: 100%; /* Ensure the background stretches across the entire width of the card */
+}
+
+
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4); /* More transparent white background */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 10px 0 2px 0; /* Increased top padding to lower the text */
+    box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.1);
+}
+footer p {
+    color: black; /* Set text color to black */
+    font-size: 16px; /* Adjust font size (you can change this value as needed) */
+    font-family: Arial, sans-serif; /* Set the font to Arial */
+    margin: 20; /* Remove any default margin */
+}
